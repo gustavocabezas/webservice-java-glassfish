@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2023 6:40:27 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Persons" table="Persons" schema="dbo" catalog="tests" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="Id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="int">
+            <column name="UserId" not-null="true" />
+        </property>
+        <property name="balanceId" type="java.lang.Integer">
+            <column name="BalanceId" />
+        </property>
+        <property name="identification" type="string">
+            <column name="Identification" unique="true" />
+        </property>
+        <property name="firstName" type="string">
+            <column name="FirstName" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="LastName" />
+        </property>
+        <property name="primaryPhoneNumber" type="string">
+            <column name="PrimaryPhoneNumber" />
+        </property>
+        <property name="secondaryPhoneNumber" type="string">
+            <column name="SecondaryPhoneNumber" />
+        </property>
+        <property name="dateCreated" type="timestamp">
+            <column name="DateCreated" length="23" not-null="true" />
+        </property>
+        <property name="dateUpdated" type="timestamp">
+            <column name="DateUpdated" length="23" />
+        </property>
+        <property name="createdBy" type="int">
+            <column name="CreatedBy" not-null="true" />
+        </property>
+        <property name="updatedBy" type="java.lang.Integer">
+            <column name="UpdatedBy" />
+        </property>
+    </class>
+</hibernate-mapping>
