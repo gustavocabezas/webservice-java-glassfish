@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Aug 14, 2023 6:40:27 PM by Hibernate Tools 4.3.1 -->
+<!-- Generated Aug 18, 2023 1:16:26 AM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="entity.UserImages" table="UserImages" schema="dbo" catalog="tests" optimistic-lock="version">
         <id name="id" type="int">

@@ -20,6 +20,15 @@
     </servlet-mapping>
     
     <servlet>
+        <servlet-name>JobsServlet</servlet-name>
+        <servlet-class>view.JobsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JobsServlet</servlet-name>
+        <url-pattern>/jobs</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>view.LoginServlet</servlet-class>
     </servlet>

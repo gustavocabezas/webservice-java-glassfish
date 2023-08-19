@@ -23,16 +23,22 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/webapplication-java-hibernate/login">Login</a>
                 </li>
-                
+
                 <li class="nav-item">
-                    <a class="nav-link" href="/webapplication-java-hibernate/signup">SignUp</a>
+                    <a class="nav-link" href="/webapplication-java-hibernate/signup">Signup</a>
                 </li>
                 <% } else { %>
-                
-                 <li class="nav-item">
+ 
+                <!--
+                <li class="nav-item">
                     <a class="nav-link" href="/webapplication-java-hibernate/account">Account</a>
                 </li>
-                
+                -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/webapplication-java-hibernate/jobs">Jobs</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="/webapplication-java-hibernate/logout">Logout</a>
                 </li>

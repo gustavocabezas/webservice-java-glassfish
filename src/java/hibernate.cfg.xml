@@ -42,10 +42,13 @@ Contributor(s):
 <hibernate-configuration>
   <session-factory>
     <property name="hibernate.connection.charSet">UTF-8</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
     <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
     <property name="hibernate.connection.url">jdbc:sqlserver://VORTEX:1433;databaseName=tests;encrypt=true;trustServerCertificate=true;</property>
     <property name="hibernate.connection.username">anonymous_admin</property>
     <property name="hibernate.connection.password">kbXeo37h5qTL</property>
+    <mapping resource="entity/Employers.hbm.xml"/>
+    <mapping resource="entity/Jobs.hbm.xml"/>
     <mapping resource="entity/Persons.hbm.xml"/>
     <mapping resource="entity/UserImages.hbm.xml"/>
     <mapping resource="entity/Users.hbm.xml"/>

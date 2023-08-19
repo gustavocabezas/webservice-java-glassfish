@@ -3,31 +3,28 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!-- Generated Aug 18, 2023 1:16:26 AM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-    <class name="entity.Persons" table="Persons" schema="dbo" catalog="tests" optimistic-lock="version">
+    <class name="entity.Jobs" table="Jobs" schema="dbo" catalog="tests" optimistic-lock="version">
         <id name="id" type="int">
             <column name="Id" />
             <generator class="identity" />
         </id>
-        <property name="userId" type="int">
-            <column name="UserId" not-null="true" />
+        <property name="title" type="string">
+            <column name="Title" not-null="true" />
         </property>
-        <property name="balanceId" type="java.lang.Integer">
-            <column name="BalanceId" />
+        <property name="description" type="string">
+            <column name="Description" not-null="true"/>
         </property>
-        <property name="identification" type="string">
-            <column name="Identification" unique="true" not-null="true"/>
+        <property name="locationText" type="string">
+            <column name="locationText" not-null="true" />
         </property>
-        <property name="firstName" type="string">
-            <column name="FirstName" />
+        <property name="requirements" type="string">
+            <column name="Requirements" not-null="true" />
         </property>
-        <property name="lastName" type="string">
-            <column name="LastName" />
+        <property name="salary" type="big_decimal">
+            <column name="Salary" precision="10" not-null="true" />
         </property>
-        <property name="primaryPhoneNumber" type="string">
-            <column name="PrimaryPhoneNumber" />
-        </property>
-        <property name="secondaryPhoneNumber" type="string">
-            <column name="SecondaryPhoneNumber" />
+        <property name="tags" type="string">
+            <column name="Tags" />
         </property>
         <property name="dateCreated" type="timestamp">
             <column name="DateCreated" length="23" not-null="true" />
